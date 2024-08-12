@@ -1,0 +1,167 @@
+/* leveraging layout nad some styling with bootstrap */
+
+:root {
+    --blue: #131c29;
+    --orange: #ff8901;
+    --bg: #f5f6f8;
+    --btn: #213349;
+    --date1: #b88546;
+    --date2: #bc6142;
+    --date3: #bd425e;
+    --bottomSec: #0b1016;
+    --font: sans-serif;
+    --grad: radial-gradient(
+        at top center,
+        #37577d,
+        var(--blue) 40%
+    );
+}
+
+* { box-sizing: border-box;}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--bg);
+}
+
+.bottom-nav-item {
+    margin-left: 3px;
+    padding: 8px 14px;
+    font-size: 16px;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+.bottom-nav-item:hover {
+    background-color: var(--orange);
+}
+
+.bottom-nav-link {
+    color: var(--bg);
+}
+
+.content-heading {
+    font-size: calc(32px + (58 - 32) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.date {
+    font-size: 26px;
+}
+
+.date-div {
+    width: 64px;
+    height: 64px;
+    color: var(--bg);
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.date, .month {
+    display: block;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.footer-div-item1, .footer-list-heading, .footer-text {
+    font-size: 14px;
+}
+.footer-div-item1 {
+    line-height: 1.5;
+}
+
+.footer-div-list1 {
+    padding-left: 20px;
+    list-style-image: url('../images/cog.png');
+}
+
+.footer-div-list2 {
+    padding-left: 20px;
+    list-style-image: url('../images/chat.png');
+}
+
+.link, .top-nav-link {
+    color: #777;
+    font-size: 10px;
+}
+
+.more-btn {
+    color: var(--bg);
+    background-color: var(--btn);
+}
+
+.slider {
+    width: 25px;
+    height: 25px;
+    background-color: #777;
+    border-radius: 50%;
+}
+
+.slider:hover {
+    background-color: var(--orange);
+}
+
+.sliders {
+    width: 90px;
+    height: 30px;
+    /* border: 1px solid orange */
+}
+
+#date1 {
+    background-color: var(--date1);
+}
+
+#date2 {
+    background-color: var(--date2);
+}
+
+#date3 {
+    background-color: var(--date3);
+}
+
+#footerSection1 {
+    width: 100%;
+    padding: 40px 0 60px;
+    background-color: var(--blue);
+    background-image: var(--grad);
+}
+
+#footerSection2 {
+    width: 100%;
+    padding: 18px 0 72px;
+    background-color: var(--bottomSec);
+}
+
+#headerSection1 {
+    padding: 6px 0;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+#headerSection2 {
+    padding: 60px 0;
+}
+
+#mainSection2 {
+    padding: 30px 0;
+}
+
+@media (max-width: 1024px) {
+    .bottom-nav-item {
+        padding: 0;
+    }
+
+    .content-divs {
+        padding: 30px 0;
+    }
+
+    .footer-divs {
+        padding: 30px 0;
+    }
+}  
